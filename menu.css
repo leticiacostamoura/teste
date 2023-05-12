@@ -1,0 +1,99 @@
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+header {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background:  rgb(255, 255, 255);
+    box-shadow: 0 1px 2px rgb(110, 102, 102);
+    padding: 0px 5%;
+    z-index: 1000; 
+}
+.lg{
+    font-size: 28px;
+    font-style: italic;
+    color: rgb(168, 155, 82);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 1px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(168, 155, 82);
+}
+span.s1{
+    font-size: 28px;
+    font-style: italic;
+    color:#634e20;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 1px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color:#634e20;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav ul li{
+    position: relative;
+    float:left;
+}
+
+nav ul li a{
+    font-size: 16.5px;
+    padding: 20px;
+    color: black;
+    display: block;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+nav ul li a:hover{
+    background: #1b1515;
+    color: #fff;
+}
+
+nav ul li ul{
+    position:absolute;
+    left: 0px;
+    width: 175px;
+    background: rgb(255, 255, 255);
+    display: none;
+}
+
+nav ul li ul li{
+    width: 100%;
+    border-top: 0.1px solid rgb(82, 79, 79);   
+}
+nav ul li:focus-within > ul,
+nav ul li:hover > ul{
+    display: initial;
+}
+
+form.firstbutton{
+    margin-left: 30.4cm;
+}
+button.next{
+    padding: 10px;
+    cursor:pointer;
+    font-size: 16px;
+    background:  #1b1515;;
+    border: 1px solid rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    transition: all 0.5s;
+    margin-bottom: 5px;
+    margin-block-end: 0.8cm;
+    border-radius: 16px;
+}
+button:hover{
+    background-color: #e2dfdf;
+    color: #000000;
+    border-radius: 16px;
+}
